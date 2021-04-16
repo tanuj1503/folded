@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+.card{
+    position: relative;
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transition: 2s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover{
+    transform: translateX(50%);
+}
+
+.box{
+    position: relative;
+}
+.content{
+    position: absolute;
+    margin: 1rem;
+    top: 0;
+    left: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    margin-right: 2rem;
+}
+
+.icon i{
+    margin-right: 0.8rem;
+    font-size: 18px;
+}
+
+.content header{
+    font-weight: 600;
+    font-size: 20px;
+}
+.pic .image3{
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+}
+.followers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+.flex p{
+    text-align: center;
+    width: 63px;
+    margin-right: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.flex h3{
+    text-align: center;
+    width: 50px;
+    margin-right: 2rem;
+}
+
+.bio p, .bio h3, .bio a{
+    line-height: 1px;
+}
+.container{
+    display: flex;
+    width: 400px;
+    
+}
+.container p{
+    border: 1px solid grey;
+    padding: 5px 60px;
+    margin-right: 6px;
+    border-radius: 8px;
+}
+
+.image1
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    z-index: 1;
+    background-color: rgb(235, 201, 229);
+    transition: 1s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.image1 img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+.card:hover .image1{
+ transform: rotateY(-180deg);
+}
+
+.image1 img:nth-child(2){
+    transform: rotateY(180deg);
+}
